@@ -1,6 +1,5 @@
 <script>
-    import { url } from '$app/stores'
-import base from '$lib/base.js'
+    import base from '$lib/base.js'
 
     let days
     
@@ -105,11 +104,11 @@ import base from '$lib/base.js'
         margin-top: 137px; 
         width: 100%; 
         height: 100%; 
-        background-size: cover;
+        background-size: cover !important;
         position: absolute;
         top: 0;
         z-index: -1;
-        background-position: 50% 50%;
+        background-position: 50% 50% !important;
     }
 
     #info {
