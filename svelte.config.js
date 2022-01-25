@@ -1,4 +1,4 @@
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-netlify';
 import preprocess from 'svelte-preprocess';
 import base from './src/lib/base.js';
 
@@ -14,7 +14,7 @@ const config = {
 		// 	assets: 'docs',
 		// 	pages: 'docs'
 		// }),
-		adapter: vercel(),
+		adapter: adapter(),
 		paths: {
 			base
 		},
