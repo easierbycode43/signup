@@ -86,17 +86,17 @@
     </label>
 
     <label for="">
-        <span class='md'>Thursday (3pm-6pm)</span>
+        <span class='md'>Thursday Prep (3pm-6pm)</span>
         <input type="checkbox" name="days" value="Thursday"/>   
     </label>
 
     <label for="">
-        <span class='md'>Friday (2pm-4:30pm)</span>
+        <span class='md'>Friday Prep (2pm-4:30pm)</span>
         <input type="checkbox" name="days" value="Friday"/>   
     </label>
 
     <label for="">
-        <span class='md'>Saturday (6am-2pm)</span>
+        <span class='md'>Saturday Market (6am-2pm)</span>
         <input type="checkbox" name="days" value="Saturday"/>   
     </label>
 
@@ -140,7 +140,7 @@
     }
 
     label > span.md {
-        flex: 1 0 185px;
+        flex: 1 0 235px;
     }
 
     button[type="submit"] {
