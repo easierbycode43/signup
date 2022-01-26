@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import base from './src/lib/base.js';
 
@@ -10,11 +10,10 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		// adapter: adapter({
-		// 	assets: 'docs',
-		// 	pages: 'docs'
-		// }),
-		adapter: adapter(),
+		adapter: adapter({
+			assets: 'docs',
+			pages: 'docs'
+		}),
 		paths: {
 			base
 		},
