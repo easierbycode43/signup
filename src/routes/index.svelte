@@ -6,8 +6,11 @@
     const post = async ({ params, request }) => {
         const body = request.formData;
         const name = body.get("name");
+        const email = body.get("email");
+        const phone = body.get("phone");
         const days = body.getAll("days");
-        let fetchUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdDw9nf3zt8ebxN9kZLIYLAGGmmFcSZrT7_FoHzfiYhpm3ehw/formResponse?usp=pp_url&entry.391768003=${name}`;
+
+        let fetchUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdDw9nf3zt8ebxN9kZLIYLAGGmmFcSZrT7_FoHzfiYhpm3ehw/formResponse?usp=pp_url&entry.391768003=${name}&entry.382350939=${email}&entry.134710918=${phone}`;
         
         if (days.includes('Thursday')) fetchUrl += '&entry.1314416783=Thursday';
         if (days.includes('Friday')) fetchUrl += '&entry.1314416783=Friday';
@@ -68,22 +71,32 @@
 
 <form on:submit|preventDefault="{submitForm}">
     <label for="">
-        Name&nbsp;
-        <input type="text" name="name" required minlength="1" />
+        <span class='sm'>Name</span>
+        <input type="text" name="name" required minlength="1" autocomplete="name" />
     </label>
 
     <label for="">
-        Thursday (3pm-6pm)
+        <span class='sm'>Email</span>
+        <input type="email" name="email" required />
+    </label>
+
+    <label for="">
+        <span class='sm'>Phone</span>
+        <input type="tel" name="phone" required />
+    </label>
+
+    <label for="">
+        <span class='md'>Thursday (3pm-6pm)</span>
         <input type="checkbox" name="days" value="Thursday"/>   
     </label>
 
     <label for="">
-        Friday (2pm-4:30pm)
+        <span class='md'>Friday (2pm-4:30pm)</span>
         <input type="checkbox" name="days" value="Friday"/>   
     </label>
 
     <label for="">
-        Saturday (6am-2pm)&nbsp;
+        <span class='md'>Saturday (6am-2pm)</span>
         <input type="checkbox" name="days" value="Saturday"/>   
     </label>
 
@@ -115,6 +128,19 @@
         flex-direction: column;
         align-items: center;
         margin: 25px 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+    }
+
+    label > span.sm {
+        flex: 1 0 65px;
+    }
+
+    label > span.md {
+        flex: 1 0 185px;
     }
 
     button[type="submit"] {
@@ -168,6 +194,7 @@
 
     @media (pointer: fine) {
         input[type="checkbox"] {
+            min-width: 26px;
             width: 26px;
             height: 26px;
         }
@@ -180,6 +207,7 @@
 
     @media (pointer: coarse) {
         input[type="checkbox"] {
+            min-width: 36px;
             width: 36px;
             height: 36px;
         }
