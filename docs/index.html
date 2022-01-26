@@ -7,13 +7,13 @@
 		<link rel="stylesheet" href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-	<link rel="stylesheet" href="/signup/_app/assets/pages/index.svelte-795dadaa.css">
-	<link rel="modulepreload" href="/signup/_app/start-5ab5dcb1.js">
+	<link rel="stylesheet" href="/signup/_app/assets/pages/index.svelte-2f4bc51d.css">
+	<link rel="modulepreload" href="/signup/_app/start-7c5f14fc.js">
 	<link rel="modulepreload" href="/signup/_app/chunks/vendor-d2aeda75.js">
 	<link rel="modulepreload" href="/signup/_app/layout.svelte-36a97655.js">
-	<link rel="modulepreload" href="/signup/_app/pages/index.svelte-e9eb8135.js">
+	<link rel="modulepreload" href="/signup/_app/pages/index.svelte-7088722e.js">
 			<script type="module">
-				import { start } from "/signup/_app/start-5ab5dcb1.js";
+				import { start } from "/signup/_app/start-7c5f14fc.js";
 				start({
 					target: document.querySelector("#svelte"),
 					paths: {"base":"/signup","assets":"/signup"},
@@ -26,7 +26,7 @@
 						error: null,
 						nodes: [
 							import("/signup/_app/layout.svelte-36a97655.js"),
-						import("/signup/_app/pages/index.svelte-e9eb8135.js")
+						import("/signup/_app/pages/index.svelte-7088722e.js")
 						],
 						url: new URL("http://sveltekit-prerender/signup"),
 						params: {}
@@ -38,31 +38,37 @@
 		<div id="svelte">
 
 
-<div id="bg-wrpr" style="background: url(/signup/bg_artistic.webp)" class="svelte-10l5yl0"></div>
+<div id="bg-wrpr" style="background: url(/signup/bg_artistic.webp)" class="svelte-1fiixfn"></div>
 
-<div id="info" class="svelte-10l5yl0"><span id="community43" class="svelte-10l5yl0">Community43 @</span>
-    <span id="uptown" class="svelte-10l5yl0">Uptown Farmers&#39; Market</span></div>
+<div id="info" class="svelte-1fiixfn"><span id="community43" class="svelte-1fiixfn">Community43 @</span>
+    <span id="uptown" class="svelte-1fiixfn">Uptown Farmers&#39; Market</span></div>
 
-<div id="address" class="svelte-10l5yl0">5727 N Central Ave<br>
+<div id="address" class="svelte-1fiixfn">5727 N Central Ave<br>
     Phoenix, AZ 85012<br>
     (North Phoenix Baptist Church)
 </div>
 
-<form class="svelte-10l5yl0"><label for="" class="svelte-10l5yl0">Name 
-        <input type="text" name="name" required minlength="1"></label>
+<form class="svelte-1fiixfn"><label for="" class="svelte-1fiixfn"><span class="sm svelte-1fiixfn">Name</span>
+        <input type="text" name="name" required minlength="1" autocomplete="name"></label>
 
-    <label for="" class="svelte-10l5yl0">Thursday (3pm-6pm)
-        <input type="checkbox" name="days" value="Thursday" class="svelte-10l5yl0"></label>
+    <label for="" class="svelte-1fiixfn"><span class="sm svelte-1fiixfn">Email</span>
+        <input type="email" name="email" required></label>
 
-    <label for="" class="svelte-10l5yl0">Friday (2pm-4:30pm)
-        <input type="checkbox" name="days" value="Friday" class="svelte-10l5yl0"></label>
+    <label for="" class="svelte-1fiixfn"><span class="sm svelte-1fiixfn">Phone</span>
+        <input type="tel" name="phone" required></label>
 
-    <label for="" class="svelte-10l5yl0">Saturday (6am-2pm) 
-        <input type="checkbox" name="days" value="Saturday" class="svelte-10l5yl0"></label>
+    <label for="" class="svelte-1fiixfn"><span class="md svelte-1fiixfn">Thursday Prep (3pm-6pm)</span>
+        <input type="checkbox" name="days" value="Thursday" class="svelte-1fiixfn"></label>
 
-    <button type="submit" class="svelte-10l5yl0">Submit</button></form>
+    <label for="" class="svelte-1fiixfn"><span class="md svelte-1fiixfn">Friday Prep (2pm-4:30pm)</span>
+        <input type="checkbox" name="days" value="Friday" class="svelte-1fiixfn"></label>
 
-<div id="notice" class="svelte-10l5yl0">*** As a professional courtesy, anyone who has signed up and is not able to make it please tell Brad or Lauren ahead of time so we can prepare and find a replacement ***
+    <label for="" class="svelte-1fiixfn"><span class="md svelte-1fiixfn">Saturday Market (6am-2pm)</span>
+        <input type="checkbox" name="days" value="Saturday" class="svelte-1fiixfn"></label>
+
+    <button type="submit" class="svelte-1fiixfn">Submit</button></form>
+
+<div id="notice" class="svelte-1fiixfn">*** As a professional courtesy, anyone who has signed up and is not able to make it please tell Brad or Lauren ahead of time so we can prepare and find a replacement ***
 </div>
 
 </div>
