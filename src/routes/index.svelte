@@ -59,7 +59,7 @@
     <h2 style='font-weight: 400; margin: 25px 0; max-width: unset; text-align: center'>
         Thank you for your signing up to work:
         {#if days.includes('Thursday')}<br/>Thursday (3pm-6pm){/if}
-        {#if days.includes('Friday')}<br/>Friday (2pm-4:30pm){/if}
+        {#if days.includes('Friday')}<br/>Friday (2pm-5:00pm){/if}
         {#if days.includes('Saturday')}<br/>Saturday (6am-2pm){/if}
     </h2>
 {:else}
@@ -91,7 +91,7 @@
     </label>
 
     <label for="">
-        <span class='md'>Friday Prep (2pm-4:30pm)</span>
+        <span class='md'>Friday Prep (2pm-5:00pm)</span>
         <input type="checkbox" name="days" value="Friday"/>   
     </label>
 
