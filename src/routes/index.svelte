@@ -105,7 +105,7 @@
 {/if}
 
 <div id='notice'>
-    *** As a professional courtesy, anyone who has signed up and is not able to make it please tell Brad or Lauren ahead of time so we can prepare and find a replacement ***
+    *** As a professional courtesy, anyone who has signed up and is not able to make it please tell Brad or Jeniffer ahead of time so we can prepare and find a replacement ***
 </div>
 
 
